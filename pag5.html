@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 5</title>
+</head>
+<body>
+    <style>
+
+nav {
+    background-color: #333;
+    height: 50px;
+    }
+
+    ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    }
+    
+    li {
+    margin: 0 10px;
+    font-family: serif;
+    font-size: 17pt;
+    }
+
+    a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    }
+    
+    a:hover{
+            color: black;
+        }
+        body{ 
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-size: 17pt;
+        }
+        h1 {
+            color: white;
+        }
+
+        img{
+            margin-left:auto;
+            margin-right: auto;
+            width: 30%;
+            max-width: 100%;
+
+            
+        }
+         
+        .Titulo{
+            color: rgb(252, 164, 0);
+            font-family: 'Roboto Mono', monospace;
+            font-size: 45px;
+        }
+
+        input{
+            width: 230px;
+            padding: 10px 12px;
+            box-sizing: border-box;
+        }
+
+        form{
+            display: grid;
+            padding: 10px;
+        }
+
+        button:hover {
+            color: rgb(5, 2, 0);
+            text-align: center;
+            background-color: rgb(248, 248, 248);
+            text-decoration: none;
+        }
+
+        .informaçao{
+            width: 500px;
+            height: 200px;
+    
+        }
+
+        a:hover{
+            color: black;
+        }
+
+        @media only screen and (max-width: 768px) {
+            nav {
+                height: auto;
+            }
+            ul {
+                flex-direction: column;
+                height: auto;
+            }
+            li {
+                margin: 10px 0;
+            }
+            .menu-toggle {
+                display: block;
+                cursor: pointer;
+            }
+            .menu-toggle:focus + ul {
+                display: block;
+            }
+            .menu-toggle::after {
+                content: '\2630';
+                font-size: 24px;
+                color: white;
+                float: right;
+                margin-top: -30px;
+                margin-right: 20px;
+            }
+        }
+            .svg{
+                width: 100px;
+            }
+
+            .grade{ 
+                display: grid;
+                
+            }
+
+            .grade-item-img{
+                text-align: center;
+            }
+
+            .grade-item-svg{
+                text-align: center;
+            }
+
+            li:nth-child(5){
+            border-left: none;
+    }
+
+    .mainmenubtn {
+    background-color: #333;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+}
+.mainmenubtn:hover {
+    background-color: rgb(252, 252, 252);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+.dropdown-child {
+    display: none;
+    background-color: #333;
+    min-width: 200px;
+    font-size: 20px;
+    
+}
+.dropdown-child a {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-decoration: none;
+    display: block
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+#botaocontato{
+    width: 100px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            background-color: rgb(255,140,105);
+            border-radius: 5px;
+            padding: 20px;
+            transition-duration: 0.4s;
+            text-decoration: none;
+            margin: 15px;
+            margin-left: 200px;
+}
+
+</style>
+
+    <nav class="menu">
+        <ul>
+          <li><a href="pag1.html">Introdução</a></li>
+          <li><a href="pag2.html">Detalhes</a></li>
+          <li><a href="pag3.html">Novidades</a></li>
+          <li><a href="pag4.html">Portifólio</a></li>
+          <li><a href="pag5.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="dropdown">
+        <button class="mainmenubtn">Menu</button>
+        <div class="dropdown-child">
+          <a href="pag1.html">Página 1</a>
+          <a href="pag2.html">Página 2</a>
+          <a href="pag3.html">Página 3</a>
+          <a href="pag4.html">Página 4</a>
+          <a href="pag5.html">Página 5</a>
+        </div>
+      </div>
+
+    <h1 class="Titulo">Contato</h1>
+
+    <div class="grade">
+
+</div>
+
+    <div class="grade-item-img">
+        <img src="imagens/imagem5.jpg" alt="imagem">
+    </div>
+
+    <div class="grade-item-svg">
+        <a href="https://www.instagram.com/taizaauferil/"><img class="svg" src="svg/insta.svg"></a>
+        <a href="https://www.linkedin.com/in/taiza-ribeiro-282679219/"><img class="svg" src="svg/linkedin.svg"></a>
+    </div>
+
+<form>
+    E-mail:<input type="text"/> 
+        Informação: <textarea class= "informaçao" type="text">
+     </textarea>
+    <button id="botaocontato">
+        <a href="mailto:contato.tairib@gmail.com">Enviar</a>
+    </button>
+ </form>
+    </head>
+        </body>
+            </html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2</title>
+
+<body>
+    <style>
+        
+        body{ 
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+    
+        .Titulo{
+            color: rgb(252, 164, 0);
+            font-family: 'Roboto Mono', monospace;
+            font-size: 45px;
+        }
+
+        h2{
+            font-family: 'Roboto Mono', monospace;
+            font-size: 28px;
+        }
+
+        button{
+            color: rgb(0, 0, 0);
+            text-align: center;
+            background-color: rgb(255,140,105);
+            border-radius: 5px;
+            padding: 20px;
+            transition-duration: 0.4s;
+            text-decoration: none;
+        }
+            button:hover {
+            color: rgb(5, 2, 0);
+            text-align: center;
+            background-color: rgb(248, 248, 248);
+            text-decoration: none;
+        }
+
+        p{
+            font-family: 'Roboto Mono', monospace;
+            font-size: 22px;
+        }
+
+        li:first-child {
+            border-left: none;
+    }
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        max-width: 100%;
+        display: block;
+    }
+
+.mainmenubtn {
+    background-color: #333;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+}
+.mainmenubtn:hover {
+    background-color: rgb(252, 252, 252);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+.dropdown-child {
+    display: none;
+    background-color: #333;
+    min-width: 200px;
+    font-size: 20px;
+    
+}
+.dropdown-child a {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-decoration: none;
+    display: block
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+.corlink{
+    color: chocolate;
+}
+    .corlink:hover{
+        color: red;
+    }
+
+</style>
+    <nav class="menu">
+        <ul>
+          <li><a href="pag1.html">Introdução</a></li>
+          <li><a href="pag2.html">Detalhes</a></li>
+          <li><a href="pag3.html">Novidades</a></li>
+          <li><a href="pag4.html">Portifólio</a></li>
+          <li><a href="pag5.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="dropdown">
+        <button class="mainmenubtn">Menu</button>
+        <div class="dropdown-child">
+          <a href="pag1.html">Página 1</a>
+          <a href="pag2.html">Página 2</a>
+          <a href="pag3.html">Página 3</a>
+          <a href="pag4.html">Página 4</a>
+          <a href="pag5.html">Página 5</a>
+        </div>
+      </div>
+      
+    <h1 class="Titulo">Sobre mim</h1>
+
+
+    <p>
+        Eu sou Taiza, estudante de Sistemas De Informação na UVA ( Universidade Veiga De Almeida ). Atualmente, estou no meu 1 semestre e estou me especializando em Front-end. Eu sou apaixonada por tecnologia e estou sempre procurando aprender mais sobre isso.
+    </p> 
+
+        <h2> 
+            Habilidades:
+        </h2>
+
+        <p>
+            Ao longo do meu curso, adquiri habilidades em php, JavaScrip e Back-end. Também participei de projetos que me permitiram adquirir mais conhecimento sobre. Além disso, também tenho habilidades em software.
+        </p>
+    
+        <h2> 
+            Interesses: 
+        </h2>
+
+        <p>
+            Fora da faculdade, eu gosto de fazer live, ir à academia e estudar. Também faço parte de um grupo de jogos e futuramente estarei envolvida em projetos relacionados a tal.
+        </p>
+    
+        <h2>
+            Contato:
+        </h2>    
+
+        <p> 
+            Se você quiser entrar em contato comigo, pode me encontrar no meu endereço de <a class="corlink" href="mailto:contato.tairib@gmail.com"> e-mail </a> ou no meu perfil do <a class="corlink" href="https://www.linkedin.com/in/taiza-ribeiro-282679219/"> linkedin</a>. Ficarei feliz em responder a quaisquer perguntas ou colaborar em projetos relacionados aos meus interesses e habilidades.
+        </p>    
+   
+        <p>
+        Clique aqui para acessar meu currículo:
+        <button><a href= imagens/Currículo.jpg target="_blank">Currículo</a></button>
+    </p>
+    
+        
+    <img src="imagens/imagem2.png" alt="imagem">
+
+</head>
+
+</body>
+</html>

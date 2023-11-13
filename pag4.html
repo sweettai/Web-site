@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 4</title>
+</head>
+<body>
+    <style>
+        nav {
+    background-color: #333;
+    height: 50px;
+    }
+
+    ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    }
+    
+    li {
+    margin: 0 10px;
+    font-family: serif;
+    font-size: 17pt;
+    }
+
+    a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0px;
+    }
+    
+    a:hover{
+            color: black;
+        }
+        body{ 
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            
+        }
+        h1 {
+            color: white;
+        }
+
+        img{
+            margin-left:auto;
+            margin-right: auto;
+            width: 50%;
+            max-width: 100%;
+            display: block;
+        }
+         
+        .Titulo{
+            color: rgb(252, 164, 0);
+            font-family: 'Roboto Mono', monospace;
+            font-size: 45px;
+            
+        }
+
+        p{
+            font-family: 'Roboto Mono', monospace;
+            font-size: 22px;
+        }
+
+        div{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            flex-wrap: wrap;
+            flex-direction: row;
+           
+        }
+        @media only screen and (max-width: 768px) {
+            nav {
+                height: auto;
+            }
+            ul {
+                flex-direction: column;
+                height: auto;
+            }
+            li {
+                margin: 10px 0;
+            }
+            .menu-toggle {
+                display: block;
+                cursor: pointer;
+            }
+            .menu-toggle:focus + ul {
+                display: block;
+            }
+            .menu-toggle::after {
+                content: '\2630';
+                font-size: 24px;
+                color: white;
+                float: right;
+                margin-top: -30px;
+                margin-right: 20px;
+            }
+        }  
+
+        li:nth-child(4){
+            border-left: none;
+    }
+
+    .mainmenubtn {
+    background-color: #333;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+}
+.mainmenubtn:hover {
+    background-color: rgb(252, 252, 252);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+.dropdown-child {
+    display: none;
+    background-color: #333;
+    min-width: 200px;
+    font-size: 20px;
+    
+}
+.dropdown-child a {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-decoration: none;
+    display: block
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+   .cadeiaimg{
+    width: 560px;
+   }
+
+    </style>
+     <nav class="menu">
+        <ul>
+          <li><a href="pag1.html">Introdução</a></li>
+          <li><a href="pag2.html">Detalhes</a></li>
+          <li><a href="pag3.html">Novidades</a></li>
+          <li><a href="pag4.html">Portifólio</a></li>
+          <li><a href="pag5.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="dropdown">
+        <button class="mainmenubtn">Menu</button>
+        <div class="dropdown-child">
+          <a href="pag1.html">Página 1</a>
+          <a href="pag2.html">Página 2</a>
+          <a href="pag3.html">Página 3</a>
+          <a href="pag4.html">Página 4</a>
+          <a href="pag5.html">Página 5</a>
+        </div>
+      </div>
+
+    <h1 class="Titulo">Portifólio</h1>
+    <p>Criar um site pessoal: Um projeto simples e eficaz seria criar um site pessoal. Você pode usar ferramentas como HTML, CSS e JavaScript para criar um site que mostre suas habilidades e experiência.</p>
+
+        <p> um jogo simples: Criar um jogo simples usando uma linguagem de programação como Python ou JavaScript é uma ótima maneira de praticar suas habilidades de programação. Você pode criar um jogo de adivinhação, um jogo da velha ou até mesmo um jogo de corrida simples.</p>
+        
+        
+        <p>Criar um aplicativo de lista de tarefas: Um aplicativo de lista de tarefas é um projeto simples, mas útil, que pode ajudá-lo a praticar a lógica de programação. Você pode criar um aplicativo de lista de tarefas usando uma linguagem de programação como Python ou JavaScript.</p>
+    
+    <div class="cadeiaimg">
+        <img class= "img1" src="imagens/imagem4.jpg" alt="imagem">
+        <img class= "img2" src="imagens/imagem4.1.png" alt="imagem">
+        <img class= "img3" src="imagens/imagem4.2.jpg" alt="imagem">
+        <img class= "img4" src="imagens/imagem4.3.png" alt="imagem">
+    </div>
+
+        <p>Criar um aplicativo de conversor de unidades: Um aplicativo de conversor de unidades é outro projeto útil que pode ajudá-lo a praticar a lógica de programação. Você pode criar um aplicativo de conversor de unidades que converta unidades de medida como temperatura, comprimento e peso.</p>
+        
+        <p>Criar um chatbot simples: Um chatbot simples é um projeto divertido e útil que pode ajudá-lo a aprender sobre inteligência artificial e processamento de linguagem natural. Você pode usar uma plataforma de chatbot como o Dialogflow do Google para criar um chatbot que responda a perguntas simples.</p>
+        
+        <p>um aplicativo de clima: Um aplicativo de clima é um projeto útil que pode ajudá-lo a aprender sobre API's e integração de dados. Você pode usar uma API de clima como a OpenWeatherMap para criar um aplicativo que mostre as condições climáticas atuais em uma determinada cidade.</p>
+
+   
+</head>
+   
+</body>
+</html>
